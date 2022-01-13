@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFCFC"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginBottom="113dp"
+        android:layout_x="28dp"
+        android:layout_y="47dp"
+        android:text="Name :- "
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="184dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="98dp"
+        android:layout_x="136dp"
+        android:layout_y="38dp"
+        android:hint="Enter name"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/name_tv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="360dp"
+        android:layout_x="26dp"
+        android:layout_y="89dp"
+        android:text="Gendar :-"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_tv" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="226dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="195dp"
+        android:layout_x="134dp"
+        android:layout_y="86dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/name">
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="144dp"
+            android:layout_y="139dp"
+            android:text="Female"
+
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="274dp" />
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="144dp"
+            android:layout_y="139dp"
+            android:text="Male"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="274dp" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="32dp"
+        android:layout_y="209dp"
+        android:text="City :-"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <Spinner
+        android:id="@+id/city"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_x="138dp"
+        android:layout_y="212dp"
+        android:hint="@string/select_city"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="115dp"
+        android:layout_marginLeft="115dp"
+        android:layout_marginBottom="67dp"
+        android:layout_x="116dp"
+        android:layout_y="386dp"
+        android:onClick="register"
+        android:text="submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <DigitalClock
+        android:id="@+id/clock"
+        android:layout_width="100dp"
+        android:layout_height="40dp" />
+
+
+</AbsoluteLayout>
